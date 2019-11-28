@@ -23,16 +23,24 @@ class SelectedCourse extends Component {
     }
 
     return (
-      <div>
-        <Link to={"/courses"}>&#8656;
-        </Link>
-        <h1>{this.props.course.name}</h1>
+      <div className="roster">
+
+        <h1 className="courseName">{this.props.course.name}</h1>
 
         <ol>{this.props.course.parts.map(part => {
-          return <li key={part.id}><Link title={part.title} to={``}>{part.subjects}</Link></li>
+          return <li className="courseList" key={part.id}>
+            <Link
+              className="courseLink courses"
+              title={part.title}
+              to={`/selected-lessons/${part.id}`}
+            >
+              {part.title}
+            </Link>
+          </li>
         })}</ol>
 
-
+        <Link className="courseLink" to={"/courses"}>&#8656; Назад к курсам
+        </Link>
 
       </div>
     );

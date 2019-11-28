@@ -1,3 +1,7 @@
 export const COURSES_FETCHED = 'COURSES_FETCHED';
 export const COURSES_SELECT = 'COURSES_SELECT';
 export const LESSONS_FETCHED = 'LESSONS_FETCHED';
+export const LESSON_SELECT = 'LESSON_SELECT';
+export const AUTH_LOGIN = 'AUTH_LOGIN';
+export const AUTH_REGISTER = 'AUTH_REGISTER';
+export const AUTH_LOGOUT = 'AUTH_LOGOUT';

@@ -8,6 +8,11 @@ import thunk from "redux-thunk";
 import {Provider} from 'react-redux';
 import {applyMiddleware, combineReducers, createStore} from "redux";
 import  * as reducers from "./store/reducers";
+import { setTokenToDefaults } from './helper/auth';
+import { setInterceptors } from './helper/interceptors';
+
+setInterceptors();
+setTokenToDefaults();
 
 const store = createStore(combineReducers(reducers), applyMiddleware(thunk));
 

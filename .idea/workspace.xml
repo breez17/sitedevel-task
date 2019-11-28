@@ -1,7 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9b771804-e728-458f-86ef-41e7189b80a4" name="Default Changelist" comment="" />
+    <list default="true" id="9b771804-e728-458f-86ef-41e7189b80a4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/containers/auth/Login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/auth/Register.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/courses/roster.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/helper/auth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/helper/interceptors.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/authService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/auth/action.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/auth/reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Lessons/lessonsList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Lessons/lessonsList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Lessons/selectedLesson.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Lessons/selectedLesson.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/courses/roster.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/courses/roster.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/courses/selectedCourse.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/courses/selectedCourse.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/lessonsService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/lessonsService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/constants/actionConstants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/constants/actionConstants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/courses/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/courses/reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/lessons/action.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/lessons/action.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/lessons/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/lessons/reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers.js" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,17 +35,24 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="SCSS File" />
         <option value="JavaScript File" />
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1UBtQC2ttLWZomFTQnOdIKIFG6O" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -51,11 +82,22 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1574841797525</updated>
-      <workItem from="1574841798691" duration="11554000" />
+      <workItem from="1574841798691" duration="25206000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

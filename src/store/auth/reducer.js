@@ -2,20 +2,19 @@ import Immutable from 'seamless-immutable';
 import * as constants from '../constants/actionConstants'
 
 const initialState = Immutable({
-  holderLessons: [],
-  selectedLesson: null,
+  user: null,
 });
 
-export default function reduce(state = initialState, action = {}) {
+export default function reducer(state = initialState, action = {}) {
   switch (action.type) {
-    case constants.LESSONS_FETCHED:
+    case constants.AUTH_LOGOUT:
       return state.merge({
-        holderLessons: action.lessons,
+        user: null,
       });
 
-    case constants.LESSON_SELECT:
+    case constants.AUTH_LOGIN:
       return state.merge({
-        selectedLesson: action.lesson,
+        user: action.user,
       });
 
     default:

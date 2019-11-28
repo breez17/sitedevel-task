@@ -5,6 +5,20 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(90deg, #fd8355 0%, #f0576c 37%, #f79cbd 100%);
+}
+
+.App {
+  max-width: 1170px;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: .3s all;
 }
 
 code {
@@ -14,7 +28,6 @@ code {
 
 a {
   text-decoration: none;
-  color: #000000;
   transition: .3s all;
 }
 
@@ -22,6 +35,3 @@ a:hover {
   letter-spacing: 2px;
 }
 
-li {
-  margin-top: 5px;
-}

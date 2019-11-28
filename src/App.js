@@ -1,36 +1,58 @@
 import React from 'react';
 import {Route} from 'react-router-dom'
+import {logout} from "./store/auth/action";
 import roster from '../src/containers/courses/roster'
 import selectedCourse from "./containers/courses/selectedCourse";
 import lessonsList from "./containers/Lessons/lessonsList";
 import selectedLesson from './containers/Lessons/selectedLesson'
+import Register from './containers/auth/Register'
+import Login from './containers/auth/Login'
+import {connect} from "react-redux";
 
-function App() {
-  return (
-    <div className="App">
+class App extends React.Component {
 
-      <Route
-        path="/courses/"
-        component={roster}
-      />
+  logout = () => {
+    this.props.dispatch(logout());
+    window.location = '/login';
+  };
 
-      <Route
-      path="/selected-course/:id"
-      component={selectedCourse}
-      />
+  render() {
+    return (
+      <div className="App">
+        <button onClick={() => {this.logout();}}>Logout</button>
+        <Route
+          path="/courses/"
+          component={roster}
+        />
 
-      <Route
-      path="/all-lessons/"
-      component={lessonsList}
-      />
+        <Route
+          path="/selected-course/:id"
+          component={selectedCourse}
+        />
 
-      <Route
-      path="/selected-lessons/:id"
-      component={selectedLesson}
-      />
+        <Route
+          path="/all-lessons/"
+          component={lessonsList}
+        />
 
-    </div>
-  );
+        <Route
+          path="/selected-lessons/:id"
+          component={selectedLesson}
+        />
+
+        <Route
+          path="/register"
+          component={Register}
+        />
+
+        <Route
+          path="/login"
+          component={Login}
+        />
+
+      </div>
+    );
+  }
 }
 
-export default App;
+export default connect()(App);

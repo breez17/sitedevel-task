@@ -1,7 +1,9 @@
 import React, {Component} from 'react';
-import {connect} from 'react-redux'
+import {connect} from 'react-redux';
 import {Link} from "react-router-dom";
-import {fetchCourses} from '../../store/courses/action'
+import {fetchCourses} from '../../store/courses/action';
+
+import './roster.scss'
 
 class Roster extends Component {
 
@@ -10,16 +12,16 @@ class Roster extends Component {
   }
 
   render() {
-
-
     return (
-      <div>
-          <ol>
-            {this.props.courses.map(course => {
-              return <li key={course.id}><Link to={`/selected-course/${course.id}`}>{course.name}&nbsp;{course.created_at}</Link></li>
-            })}
-          </ol>
-        <Link to={"/all-lessons"}>Ко всем Урокам &#8658;</Link>
+      <div className="roster">
+        <ol className="wrap-list">
+          {this.props.courses.map(course => {
+            return <li className="courseList" key={course.id}>
+              <Link className="courseLink courses" to={`/selected-course/${course.id}`}>{course.name}</Link>
+            </li>
+          })}
+        </ol>
+        <Link className="courseLink success" to={"/all-lessons"}>Ко всем Урокам &#8658;</Link>
       </div>
     );
   }

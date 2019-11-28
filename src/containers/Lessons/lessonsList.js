@@ -3,6 +3,8 @@ import {connect} from 'react-redux';
 import {Link} from 'react-router-dom'
 import {fetchLessons} from "../../store/lessons/action";
 
+import '../courses/roster.scss';
+
 class LessonsList extends Component {
 
   componentDidMount() {
@@ -11,13 +13,13 @@ class LessonsList extends Component {
 
   render() {
     return (
-      <div>
+      <div className="roster">
         <ol>
           {this.props.lessons.map(lesson =>{
-            return <li key={lesson.id}><Link to={``}>{lesson.name}</Link></li>
+            return <li className="courseList" key={lesson.id}><Link className="courseLink courses" to={`/lessons/${lesson.id}`}>{lesson.name}</Link></li>
           })}
         </ol>
-        <Link to={"/courses/"}>&#8656;&nbsp;Назад ко всем курсам</Link>
+        <Link className="courseLink success" to={"/courses/"}>&#8656;&nbsp;Назад ко всем курсам</Link>
       </div>
     );
   }
