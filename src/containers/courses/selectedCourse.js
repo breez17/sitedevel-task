@@ -32,9 +32,9 @@ class SelectedCourse extends Component {
             <Link
               className="courseLink courses"
               title={part.title}
-              to={`/selected-lessons/${part.id}`}
+              to={`/lessons/${part.id}`}
             >
-              {part.title}
+              {part.subjects}
             </Link>
           </li>
         })}</ol>

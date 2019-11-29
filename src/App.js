@@ -3,11 +3,15 @@ import {Route} from 'react-router-dom'
 import {logout} from "./store/auth/action";
 import roster from '../src/containers/courses/roster'
 import selectedCourse from "./containers/courses/selectedCourse";
-import lessonsList from "./containers/Lessons/lessonsList";
-import selectedLesson from './containers/Lessons/selectedLesson'
+import list from "./containers/parts/list";
+import selected from "./containers/parts/selected";
 import Register from './containers/auth/Register'
 import Login from './containers/auth/Login'
 import {connect} from "react-redux";
+import about from "./containers/lesson/about";
+import allLessons from "./containers/lesson/allLessons";
+
+import './containers/courses/roster.scss'
 
 class App extends React.Component {
 
@@ -16,10 +20,19 @@ class App extends React.Component {
     window.location = '/login';
   };
 
+
   render() {
+
+
     return (
       <div className="App">
-        <button onClick={() => {this.logout();}}>Logout</button>
+        <button className="logout-btn" onClick={() => {
+          this.logout();
+           }
+        }
+        >
+          Logout
+        </button>
         <Route
           path="/courses/"
           component={roster}
@@ -31,13 +44,23 @@ class App extends React.Component {
         />
 
         <Route
-          path="/all-lessons/"
-          component={lessonsList}
+          path="/parts/"
+          component={list}
         />
 
         <Route
-          path="/selected-lessons/:id"
-          component={selectedLesson}
+          path="/lessons/:id"
+          component={selected}
+        />
+
+        <Route
+          path="/lesson/:id"
+          component={about}
+        />
+
+        <Route
+          path="/lessons-list"
+          component={allLessons}
         />
 
         <Route

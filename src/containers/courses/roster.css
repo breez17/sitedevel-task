@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .roster {
   text-align: center;
 }
@@ -11,6 +12,10 @@
 
 .courses {
   background: #779f80;
+}
+
+.partLink {
+  color: #ffffff;
 }
 
 .courses:hover {
@@ -29,6 +34,26 @@
   margin: 50px 0 0 0;
 }
 
+.courseName.uppcase {
+  text-transform: uppercase;
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 5px;
+}
+
+.courseName.db {
+  display: inline-block;
+  text-transform: uppercase;
+  border: 1px solid #ffffff;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+.partLink:hover, .courseName.db:hover {
+  background: #ffffff;
+  color: #f79cbd;
+  cursor: pointer;
+}
+
 .courseLink:before {
   content: "";
   position: fixed;
@@ -40,7 +65,7 @@
   background: linear-gradient(90deg, #b6ecff 0%, #ccacf0 37%, #99a4f7 100%);
   transform-origin: center right;
   transform: scaleX(0);
-  transition: transform 0.2s ease-in-out;
+  transition: transform 0.45s ease-in-out;
 }
 
 .courseLink:hover::before {
@@ -51,6 +76,186 @@
 .courseList {
   list-style: none;
   margin: 10vh auto;
+}
+
+.wrap-img {
+  margin: 40px 0 0 0;
+}
+
+.wrap-img img:hover {
+  transform: scale(1.2);
+}
+
+.lesson-title {
+  width: 100%;
+  color: #ffffff;
+  font-size: 1.3rem;
+  margin: 5vh auto;
+}
+
+.wrap-video__item video {
+  margin: auto auto 5vh auto;
+  outline: none;
+}
+
+.logout-btn {
+  outline: none;
+  width: 100px;
+  height: 40px;
+  background: #f79cbd;
+  border-radius: 0.5rem;
+  color: #ffffff;
+  position: fixed;
+  left: 5%;
+  top: 5%;
+  cursor: pointer;
+  border: none;
+  box-shadow: 1px 2px 20px rgba(0, 0, 0, 0.4);
+  font-size: 1rem;
+}
+
+.logout-btn:hover {
+  box-shadow: 1px 2px 20px rgba(0, 0, 0, 0.8);
+  border-radius: 1rem;
+}
+
+.courseName.register {
+  border-bottom: 2.5px solid #ffffff;
+  padding-bottom: 5px;
+}
+
+.form-register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+.form-register input {
+  width: 280px;
+  height: 30px;
+  outline: none;
+}
+
+.form-register label {
+  margin: 15px auto;
+  color: #ffffff;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+
+.authBtn {
+  margin: 15px auto 30px auto;
+  border: none;
+  background: #a1d8af;
+  width: 280px;
+  height: 30px;
+  border-radius: 5px;
+  color: #ffffff;
+  text-transform: uppercase;
+  outline: none;
+}
+
+.authBtn:hover {
+  cursor: pointer;
+  background: #b9f3ca;
+  box-shadow: 3px 5px 20px #000000;
+}
+
+.wrapper-form {
+  width: 80%;
+  height: auto;
+  padding: 50px 30px;
+  background: rgba(0, 0, 0, 0.4);
+  margin: 20vh auto;
+  box-shadow: 3px 5px 20px #000000;
+}
+
+.courseName.login {
+  margin: 0;
+}
+
+@keyframes click-wave {
+  0% {
+    height: 40px;
+    width: 40px;
+    opacity: 0.35;
+    position: relative;
+  }
+  100% {
+    height: 200px;
+    width: 200px;
+    margin-left: -80px;
+    margin-top: -80px;
+    opacity: 0;
+  }
+}
+.option-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  position: relative;
+  top: 13.33333px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 40px;
+  width: 40px;
+  transition: all 0.15s ease-out 0s;
+  background: #cbd1d8;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 0.5rem;
+  outline: none;
+  position: relative;
+  z-index: 1000;
+}
+
+.option-input:hover {
+  background: #9faab7;
+}
+
+.option-input:checked {
+  background: #40e0d0;
+}
+
+.option-input:checked::before {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  content: "✔";
+  display: inline-block;
+  font-size: 26.66667px;
+  text-align: center;
+  line-height: 40px;
+}
+
+.option-input:checked::after {
+  -webkit-animation: click-wave 0.65s;
+  -moz-animation: click-wave 0.65s;
+  animation: click-wave 0.65s;
+  background: #40e0d0;
+  content: "";
+  display: block;
+  position: relative;
+  z-index: 100;
+}
+
+.checkedForm {
+  display: flex;
+  align-items: center;
+  top: 0;
+  right: 20%;
+  position: absolute;
+}
+
+.courseList {
+  position: relative;
 }
 
 /*# sourceMappingURL=roster.css.map */

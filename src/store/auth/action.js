@@ -9,6 +9,7 @@ export function login(credentials) {
 
       setToken(response.jwt);
       dispatch({type: constants.AUTH_LOGIN, action: response.user});
+      window.location = '/courses';
     } catch (e) {
       console.log(e);
     }

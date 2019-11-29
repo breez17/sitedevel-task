@@ -3,6 +3,8 @@ import { login } from "../../store/auth/action";
 import {connect} from "react-redux";
 import {Link} from "react-router-dom";
 
+import './auth.scss'
+
 class Login extends Component {
   state = {
     identifier: null,
@@ -15,8 +17,6 @@ class Login extends Component {
       identifier: this.state.identifier,
       password: this.state.password,
     }));
-
-    window.location = '/courses';
   };
 
   updateIdentifier = event => {
@@ -33,17 +33,19 @@ class Login extends Component {
 
   render() {
     return (
-      <div>
-        <h1>Login</h1>
-        <form onSubmit={this.handleSubmit}>
-          <label htmlFor="">Identifier</label>
-          <input onChange={this.updateIdentifier} type="text" name="identifier"/>
-          <label htmlFor="">Password</label>
-          <input onChange={this.updatePassword} type="password" name="password"/>
-          <button>Login</button>
+      <div className="roster">
+        <div className="wrapper-form">
+        <h1 className="courseName login">Login</h1>
+        <form className="form-register" onSubmit={this.handleSubmit}>
+          <label htmlFor="identifier">Identifier</label>
+          <input id="identifier" onChange={this.updateIdentifier} type="text" name="identifier"/>
+          <label  htmlFor="password">Password</label>
+          <input id="password" onChange={this.updatePassword} type="password" name="password"/>
+          <button className="authBtn">Login</button>
         </form>
 
-        <Link to="/register">Register</Link>
+        <Link className="courseLink success" to="/register">Register</Link>
+        </div>
       </div>
     );
   }

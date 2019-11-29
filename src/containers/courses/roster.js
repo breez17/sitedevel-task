@@ -21,7 +21,7 @@ class Roster extends Component {
             </li>
           })}
         </ol>
-        <Link className="courseLink success" to={"/all-lessons"}>Ко всем Урокам &#8658;</Link>
+        <Link className="courseLink success" to={"/parts/"}>Ко всем Темам &#8658;</Link>
       </div>
     );
   }

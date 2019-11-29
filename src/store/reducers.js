@@ -1,9 +1,11 @@
 import courses from './courses/reducer'
-import lessons from './lessons/reducer'
+import parts from './parts/reducer'
 import auth from './auth/reducer'
+import lessons from './lesson/reducer'
 
 export {
   courses,
+  parts,
   lessons,
   auth,
 }

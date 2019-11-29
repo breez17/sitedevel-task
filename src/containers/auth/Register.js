@@ -1,7 +1,9 @@
 import React, {Component} from 'react';
-import { register } from '../../store/auth/action';
+import {register} from '../../store/auth/action';
 import {connect} from "react-redux";
 import {Link} from "react-router-dom";
+
+import './auth.scss'
 
 class Register extends Component {
 
@@ -40,18 +42,21 @@ class Register extends Component {
 
   render() {
     return (
-      <div>
-        <h1>Register</h1>
-        <form onSubmit={this.handleSubmit}>
-          <label htmlFor="">Username</label>
-          <input onChange={this.updateUsername} type="text" name="username"/>
-          <label htmlFor="">Email</label>
-          <input onChange={this.updateEmail} type="email" name="email"/>
-          <label htmlFor="">Password</label>
-          <input onChange={this.updatePassword} type="password" name="password"/>
-          <button>Register</button>
-        </form>
-        <Link to="/login">Login</Link>
+      <div className="roster">
+        <div className="wrapper-form">
+          <h1 className="courseName register">Register</h1>
+          <form className="form-register" onSubmit={this.handleSubmit}>
+            <label htmlFor="username">Username</label>
+            <input onChange={this.updateUsername} type="text" id="username" name="username"/>
+            <label htmlFor="email">Email</label>
+            <input onChange={this.updateEmail} type="email" id="email" name="email"/>
+            <label htmlFor="password">Password</label>
+            <input onChange={this.updatePassword} type="password" id="password" name="password"/>
+            <button className="authBtn">Register</button>
+          </form>
+          <span className="logout-btn">&nbsp;</span>
+          <Link className="courseLink success toLogin" to="/login">Login</Link>
+        </div>
       </div>
     );
   }
