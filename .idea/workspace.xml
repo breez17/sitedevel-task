@@ -1,36 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9b771804-e728-458f-86ef-41e7189b80a4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/containers/auth/auth.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/lesson/about.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/lesson/allLessons.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/parts/list.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/parts/selected.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/lessonService.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/partService.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/lesson/action.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/lesson/reducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/parts/action.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/parts/reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Lessons/lessonsList.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Lessons/selectedLesson.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/auth/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/auth/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/auth/Register.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/auth/Register.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/courses/roster.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/courses/roster.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/courses/roster.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/courses/roster.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/courses/roster.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/courses/roster.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/courses/roster.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/courses/roster.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/courses/selectedCourse.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/courses/selectedCourse.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/lessonsService.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/auth/action.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/auth/action.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/constants/actionConstants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/constants/actionConstants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/lessons/action.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/lessons/reducer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/reducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers.js" afterDir="false" />
-    </list>
+    <list default="true" id="9b771804-e728-458f-86ef-41e7189b80a4" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +62,7 @@
       <option name="presentableId" value="Default" />
       <updated>1574841797525</updated>
       <workItem from="1574841798691" duration="25206000" />
-      <workItem from="1574924851245" duration="20547000" />
+      <workItem from="1574924851245" duration="20776000" />
     </task>
     <servers />
   </component>
