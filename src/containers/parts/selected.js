@@ -10,16 +10,18 @@ class Selected extends Component {
     this.props.dispatch(fetchPart(id))
   }
 
-  handleChange = (isCompleted,id) => {
-    console.log(isCompleted,id);
+  handleChange = (isCompleted, id) => {
+    console.log(isCompleted, id);
+
   };
+
+  //Все эти изменения сохраняются через апи юзеру и считываются при отображении уроков (там юзеру через админку можно добавлять произвольные поля)
 
   render() {
 
     if (this.props.part == null) {
       return '';
     }
-
     return (
       <div className="roster">
 
@@ -32,7 +34,10 @@ class Selected extends Component {
 
               {lesson.name}
             </Link>
-            <input className="option-input checkbox" name={`completed[${lesson.id}]`} onChange={event => {this.handleChange(event.target.checked, lesson.id)}} title="complete" type="checkbox"/>
+            <input className="option-input checkbox" name={`completed[${lesson.id}]`} onChange={event => {
+              this.handleChange(event.target.checked, lesson.id)
+            }
+            } title="complete" type="checkbox"/>
           </li>
         })}</ol>
         <Link className="courseLink success" to={"/parts/"}>Ко всем Темам &#8658;</Link>
@@ -41,6 +46,7 @@ class Selected extends Component {
   }
 
 }
+
 
 function mapStateToProps(state) {
   return {
