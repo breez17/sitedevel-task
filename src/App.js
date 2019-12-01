@@ -9,7 +9,6 @@ import Register from './containers/auth/Register'
 import Login from './containers/auth/Login'
 import {connect} from "react-redux";
 import about from "./containers/lesson/about";
-import allLessons from "./containers/lesson/allLessons";
 
 import './containers/courses/roster.scss'
 
@@ -56,11 +55,6 @@ class App extends React.Component {
         <Route
           path="/lesson/:id"
           component={about}
-        />
-
-        <Route
-          path="/lessons-list"
-          component={allLessons}
         />
 
         <Route

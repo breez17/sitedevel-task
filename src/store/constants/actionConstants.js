@@ -6,3 +6,4 @@ export const AUTH_LOGIN = 'AUTH_LOGIN';
 export const AUTH_LOGOUT = 'AUTH_LOGOUT';
 export const LESSON_FETCHED = 'LESSON_FETCHED';
 export const LESSONS_FETCHED = 'LESSONS_FETCHED';
+export const REQUEST_USER ='REQUEST_USER';

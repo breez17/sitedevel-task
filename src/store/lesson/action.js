@@ -25,3 +25,15 @@ export function fetchLesson(id) {
   }
 }
 
+export function requestLessons(id) {
+  return async(dispatch) => {
+    try {
+      const user = await lessonService.setLessons(id);
+      dispatch({type: constants.REQUEST_USER, user})
+    }
+    catch (e) {
+      console.log(e)
+    }
+  }
+}
+

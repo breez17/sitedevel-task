@@ -11,7 +11,7 @@ class authService {
     return response.data;
   }
 
-  async login({ identifier, password}) {
+  async login({ identifier, password }) {
     const response = await axios.post('http://localhost:1337/auth/local',{
       identifier,
       password,

@@ -18,6 +18,8 @@ class SelectedCourse extends Component {
 
   render() {
 
+
+
     if (this.props.course === null) {
       return '';
     }
@@ -35,6 +37,7 @@ class SelectedCourse extends Component {
               to={`/lessons/${part.id}`}
             >
               {part.subjects}
+
             </Link>
           </li>
         })}</ol>

@@ -6,7 +6,8 @@ import {fetchLesson} from "../../store/lesson/action";
 class About extends Component {
   componentDidMount() {
     const {id} = this.props.match.params;
-    this.props.dispatch(fetchLesson(id))
+    this.props.dispatch(fetchLesson(id));
+
   }
 
 

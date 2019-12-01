@@ -12,6 +12,9 @@ class Roster extends Component {
   }
 
   render() {
+
+    console.log(this.props.courses);
+
     return (
       <div className="roster">
         <ol className="wrap-list">
