@@ -1,6 +1,6 @@
 import React from 'react';
 import {Route} from 'react-router-dom'
-import {logout} from "./store/auth/action";
+import {logout,getUser} from "./store/auth/action";
 import roster from '../src/containers/courses/roster'
 import selectedCourse from "./containers/courses/selectedCourse";
 import list from "./containers/parts/list";
@@ -14,31 +14,52 @@ import './containers/courses/roster.scss'
 
 class App extends React.Component {
 
+  constructor(props) {
+    super(props);
+    this.props.dispatch(getUser());
+  }
+
   logout = () => {
     this.props.dispatch(logout());
     window.location = '/login';
   };
 
+  renderLogout = () => {
+    if (!this.props.user) {
+      return '';
+    }
+
+    return (
+      <button className="logout-btn" onClick={() => {this.logout()}}>
+        Logout
+      </button>
+    );
+  };
+
+  renderUserInfo = () => {
+    if (!this.props.user) {
+      return '';
+    }
+
+    return (
+      <span>{this.props.user.username} ({this.props.user.email})</span>
+    );
+  };
 
   render() {
 
-
     return (
       <div className="App">
-        <button className="logout-btn" onClick={() => {
-          this.logout();
-           }
-        }
-        >
-          Logout
-        </button>
+        {this.renderLogout()}
+        {this.renderUserInfo()}
         <Route
           path="/courses/"
           component={roster}
+          exact
         />
 
         <Route
-          path="/selected-course/:id"
+          path="/courses/:id"
           component={selectedCourse}
         />
 
@@ -72,4 +93,10 @@ class App extends React.Component {
   }
 }
 
-export default connect()(App);
+function mapStateToProps(state) {
+  return {
+    user: state.auth.user,
+  };
+}
+
+export default connect(mapStateToProps)(App);

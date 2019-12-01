@@ -2,18 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b771804-e728-458f-86ef-41e7189b80a4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/services/completesService.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/courses/roster.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/courses/roster.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/courses/selectedCourse.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/courses/selectedCourse.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/lesson/about.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/lesson/about.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/lesson/allLessons.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/parts/selected.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/parts/selected.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/authService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/authService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/lessonService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/lessonService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helper/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/helper/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/completesService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/completesService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/auth/action.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/auth/action.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/completes/action.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/completes/action.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/completes/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/completes/reducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/constants/actionConstants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/constants/actionConstants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/lesson/action.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/lesson/action.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/courses/action.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/courses/action.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -95,7 +95,7 @@
       <workItem from="1574841798691" duration="25206000" />
       <workItem from="1574924851245" duration="22669000" />
       <workItem from="1575033187932" duration="5919000" />
-      <workItem from="1575196219152" duration="1051000" />
+      <workItem from="1575196219152" duration="5820000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1575031128723</created>

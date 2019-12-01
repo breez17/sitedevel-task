@@ -12,15 +12,12 @@ class Roster extends Component {
   }
 
   render() {
-
-    console.log(this.props.courses);
-
     return (
       <div className="roster">
         <ol className="wrap-list">
           {this.props.courses.map(course => {
             return <li className="courseList" key={course.id}>
-              <Link className="courseLink courses" to={`/selected-course/${course.id}`}>{course.name}</Link>
+              <Link className="courseLink courses" to={`/courses/${course.id}`}>{course.name}</Link>
             </li>
           })}
         </ol>
